@@ -60,7 +60,7 @@ var timerModule = angular.module('timer', [])
         });
 
         $scope.$on('timer-clearTimer', function () {
-          $scope.startTime = null;
+          $scope.startTime = new Date();
         });
 
         function resetTimeout() {
