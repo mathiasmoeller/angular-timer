@@ -1,5 +1,5 @@
 /**
- * angular-timer - v1.1.6 - 2014-10-13 4:12 PM
+ * angular-timer - v1.1.6 - 2014-10-13 4:15 PM
  * https://github.com/siddii/angular-timer
  *
  * Copyright (c) 2014 Siddique Hameed
@@ -67,7 +67,10 @@ var timerModule = angular.module('timer', [])
         });
 
         $scope.$on('timer-clearTimer', function () {
-          $scope.startTime = new Date();
+          $scope.seconds = 0;
+          $scope.minutes = 0;
+          $scope.hours = 0;
+          $scope.days = 0;
         });
 
         function resetTimeout() {
